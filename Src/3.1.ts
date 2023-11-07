@@ -23,6 +23,7 @@
         return `${this.name} is ${this.age} years old`
        }
 
+       
     }
     // const dog =new person('babu',23,'red')
     // console.log(dog.name)
