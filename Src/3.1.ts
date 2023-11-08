@@ -32,3 +32,11 @@
     console.log(jaberDetails,jabFUnc)
 
 }
+
+
+// git init
+// git add README.md
+// git commit -m "first commit"
+// git branch -M main
+// git remote add origin https://github.com/Porgramming-Hero-web-course/l2b2a1-explore-basic-typescript-simple-assignment-Aljaber2002.git
+// git push -u origin main
