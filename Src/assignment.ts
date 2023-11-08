@@ -168,6 +168,41 @@ const indexInNumbers = findFirstOccurrence<number>(values,55);
 const indexInStrings = findFirstOccurrence<string>(strings,'cherry');
 
 console.log(indexInStrings); //output:  1
+// problem -8---------
+interface product {
+    name:string;
+    price:number;
+    quantity:number
+}
+const shoppingCart:product[] = [
+    {
+        name:'samsung M10',
+        price:10000,
+        quantity:1
+    },
+    {
+        name:'Headphone',
+        price:1000,
+        quantity:2
+    },
+    {
+        name:'car',
+        price:20000,
+        quantity:1
+    }
+]
+const totalCoastOfCart = (cart:product[])=>{
+    let cartTotalPrice = 0;
+    cart.forEach(item=>{
+        const perProductPrice = item.price
+        const productQuantity = item.quantity
+        const perProductTotalPrice = perProductPrice*productQuantity
+        cartTotalPrice = cartTotalPrice + perProductTotalPrice
+    })
+    return `Total cart cost is ${cartTotalPrice}`
+
+}
+console.log(totalCoastOfCart(shoppingCart))
 
  
 
